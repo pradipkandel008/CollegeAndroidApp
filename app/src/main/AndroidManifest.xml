@@ -13,12 +13,13 @@
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Dashboard"></activity>
-        <activity android:name=".LoginActivity" />
-        <activity android:name=".RecyclerViewDashboard" />
-        <activity android:name=".MainActivity" />
         <activity
-            android:name=".SplashScreenActivity"
+            android:name=".Activity.DashboardActivity"
+            android:label="@string/title_activity_dashboard"></activity>
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.LoginActivity" />
+        <activity
+            android:name=".Activity.SplashScreenActivity"
             android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

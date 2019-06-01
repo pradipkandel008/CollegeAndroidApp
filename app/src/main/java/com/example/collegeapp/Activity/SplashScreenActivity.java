@@ -1,9 +1,11 @@
-package com.example.collegeapp;
+package com.example.collegeapp.Activity;
 
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.collegeapp.R;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -12,7 +14,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
 
-        final Intent intent=new Intent(SplashScreenActivity.this,LoginActivity.class);
+        final Intent intent=new Intent(SplashScreenActivity.this, LoginActivity.class);
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
